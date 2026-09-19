@@ -1,16 +1,25 @@
 \documentclass{article}
-\title{My Self}
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
 \begin{document}
 	
-\maketitle
-
-	\iffalse
-	Koustav Biswas
-	\fi
+	\section{Wrapping Text Around an Image}
+	
+	\begin{wrapfigure}{r}{0.35\textwidth}
+		\centering
+		\includegraphics[width=0.3\textwidth]{flower.jpg}
+		\caption{Machine Learning}
+	\end{wrapfigure}
+	
 	Machine Learning is an important field of Artificial Intelligence.
 	It allows computers to learn patterns from data and make useful predictions.
 	Machine Learning is widely used in healthcare, finance, education, and transportation.
 	Good quality data helps Machine Learning models produce accurate and reliable results.
 	It is also used in applications such as computer vision and natural language processing.
+	
+	% If the figure is changed from r to l, the image moves to the left side.
+	% The text then flows around the left side of the image instead of the right side.
 	
 \end{document}
