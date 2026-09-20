@@ -1,0 +1,140 @@
+\documentclass{article}
+\usepackage{multirow}
+\usepackage{booktabs}
+\begin{document}
+	\section{normal table using tabular}
+	\begin{center}
+	\begin{tabular}{|l|c|r|}
+		\hline
+		\textbf{Subject}& \textbf{Grade} & \textbf{marks}\\
+		\hline
+		Web Development & A+ &100\\
+		\hline
+		Python&A&90\\
+		\hline
+	\end{tabular}
+	\hspace{1cm}
+	\begin{tabular}{|l|c|r|}
+		\hline
+		Name&Age&City\\
+		\hline
+		Koustav & 23 & Ranchi\\
+		\hline
+		Rahul &22&Kolkata\\
+		\hline
+		
+	\end{tabular}
+		\end{center}
+	\section{Table making using table}
+	\begin{table}[h]
+		\centering
+		\caption{Student Performance Table}
+		    \vspace{0.3cm}
+		\label{tab:marks}
+		\begin{tabular}{|l|c|r|}
+			\hline
+			Name&Marks&CGPA\\
+			\hline
+			Koustav & ML&9.8\\
+			\hline
+		\end{tabular}
+	\end{table}
+	As shown in the \ref{tab:marks},Koustav scored 9.8 cgpa
+	
+	\section{Multicolumn}
+	\begin{table}[h]
+		\centering
+		\caption{Student result using multicolumn}
+		\vspace{0.3cm}
+		\label{column}
+		\begin{tabular}{|l|c|r|}
+			\hline
+			\multicolumn{3}{c}{Student performance}\\
+			\hline
+			Name & Project& Sem\\
+			\hline
+			Koustav & face detection &8th\\
+			\hline
+			
+		\end{tabular}
+		
+	\end{table}
+	As shown in the \ref{column}, 8th sem has a project
+	\section{multirow}
+\begin{table}[h]
+	\centering
+	\caption{Department Details}
+	
+	\begin{tabular}{|l|l|c|}
+		\hline
+		Department & Subject & Marks \\
+		\hline
+		\multirow{2}{*}{CSE} & Python & 90 \\
+		\cline{2-3}
+		& Java & 85 \\
+		\hline
+		ECE & Electronics & 88 \\
+		\hline
+	\end{tabular}
+\end{table}
+\section{Another multirow}
+	\begin{table}[h]
+		\centering
+		\caption{Project Details}
+	\begin{tabular}{|l|c|r|}
+		\hline
+		Department & Elective course &Marks\\
+		\hline
+		\multirow{2}{*}{CSE} & Latex & 95\\
+		\cline{2-3}
+		&Python&100\\
+		\hline
+	\end{tabular}
+	\end{table}
+\section{Guide Details}
+\begin{table}[h]
+	\centering
+	\caption{Guide Details}
+	\vspace{0.35cm}
+	\begin{tabular}{|l|c|r|}
+		\hline
+		Guide name & Project &Marks\\
+		\hline
+		\multirow{2}{*}{Poonam Moral}&Geo spatial analytics & 100\\
+		\cline{2-3}
+		&Machine learning &95\\
+		\hline
+		
+	\end{tabular}
+	
+\end{table}
+\section{Booktabs}
+\begin{table}[h]
+	\centering
+	\caption{Student Performance}
+	
+	\begin{tabular}{lcr}
+		\toprule
+		Name & Subject & Marks \\
+		\midrule
+		Koustav & Python & 95 \\
+		Rahul & Java & 90 \\
+		\bottomrule
+	\end{tabular}
+	
+\end{table}
+
+\begin{table}[h]
+	\centering
+	\caption{project guide}
+	\begin{tabular}{lcr}
+		\toprule
+		Name&project&marks\\
+		\midrule
+		Koustav & Cancer&98\\
+		Rahul & Java & 90 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+	
+\end{document}
